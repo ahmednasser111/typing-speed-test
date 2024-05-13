@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Speed Typing Test</title>
+	</head>
+	<body>
+		<div class="container">
+			<h1 class="game-name">QuickTyping</h1>
+			<div class="game-area">
+				<div class="settings">
+					<span>Level:</span>
+					<select name="level" id="level" title="level">
+						<option value="3">Hard</option>
+						<option value="4" selected>Medium</option>
+						<option value="5">Easy</option>
+					</select>
+				</div>
+				<div class="word-display">
+					<span class="word-to-write"></span>
+				</div>
+				<input
+					autocomplete="false"
+					type="text"
+					name="input-word"
+					id="input-word"
+					placeholder="Type the word here..." />
+				<button autofocus class="start">Start Game</button>
+				<div class="stats">
+					<div class="time-left">Time Left: <span></span> Seconds</div>
+					<div class="score">
+						Score: <span class="got"></span> From <span class="total"></span>
+					</div>
+				</div>
+			</div>
+			<div class="instructions">
+				<h2>Instructions</h2>
+				<p>
+					Test your typing skills! Type the word shown within the given time
+					limit. Press Enter to submit your answer.
+				</p>
+			</div>
+		</div>
+		<script src="main.js"></script>
+	</body>
+</html>

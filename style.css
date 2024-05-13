@@ -1,0 +1,133 @@
+:root {
+	--primary-color: #03a9f4; /* Main blue color */
+	--secondary-color: #f0f0f0; /* Light gray for instructions */
+	--text-color: #333; /* Main text color */
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #f8f9fa;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.container {
+	max-width: 800px;
+	padding: 20px;
+	border-radius: 5px;
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	margin: 0 auto;
+}
+
+.game-name {
+	background-color: var(--primary-color);
+	color: white;
+	text-align: center;
+	padding: 15px;
+	margin-bottom: 20px;
+	font-size: 2em;
+}
+
+.game-area {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.settings,
+.word-display,
+.input-word,
+.start,
+.stats {
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+.settings {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.settings span {
+	margin-right: 10px;
+	font-weight: bold;
+}
+
+.settings select {
+	font-size: 16px;
+	padding: 5px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.word-display {
+	font-size: 3em;
+	text-align: center;
+	color: var(--primary-color);
+}
+
+#input-word {
+	text-align: center;
+	font-size: 16px;
+	padding: 10px;
+	border: 1px solid var(--primary-color);
+	border-radius: 5px;
+	outline: none;
+	width: 100%;
+	background-color: #fff;
+}
+
+.start {
+	width: 100%;
+	background-color: var(--primary-color);
+	color: white;
+	padding: 10px 20px;
+	font-size: 18px;
+	border-radius: 5px;
+	cursor: pointer;
+	border: none;
+	transition: background-color 0.3s ease;
+}
+.start:hover {
+	background-color: #0288d1;
+}
+.start:disabled {
+	background-color: grey;
+	opacity: 0.2;
+	cursor: no-drop;
+}
+
+.stats {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.instructions {
+	margin-top: 20px;
+	padding: 10px;
+	background-color: var(--secondary-color);
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.instructions h2 {
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+.instructions p {
+	font-size: 18px;
+	line-height: 1.5;
+}
